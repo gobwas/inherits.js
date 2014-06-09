@@ -18,7 +18,6 @@ module.exports = function(Parent, protoProps, staticProps) {
     extend(Child, Parent, staticProps);
 
     // create prototype of Child, that created with Parent prototype
-    // (without making Child.prototype = new Parent())
     //
     // __proto__  <----  __proto__
     //     ^                 ^
