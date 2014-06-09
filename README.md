@@ -1,8 +1,8 @@
 # inherits.[js](https://developer.mozilla.org/en-US/docs/JavaScript)
 
-> Backbone inspired standalone inheritance function.
+> [Backbone](http://backbonejs.org) inspired standalone inheritance function.
 
-Inherits.js is a yet another tool for inheritance, inspired by [Backbone](https://backbonejs.org)'s ```extend``` method.
+Inherits.js is a yet another tool for inheritance, inspired by [Backbone](http://backbonejs.org)'s ```extend``` method.
 It creates Child constructor function with prototype chained from parent and with extended parent's static properties.
 
 ## Getting started
@@ -16,7 +16,11 @@ You could install it via npm, or download directly from ```dist``` folder.
 ```javascript
 
 var MyParentClass,
-    MyChildClass;
+    MyChildClass,
+    MyAnotherClass;
+
+// First usage case
+// ----------------
 
 MyParentClass = function() {
   // ...
@@ -37,6 +41,9 @@ MyChildClass = MyParentClass.extend({
         //
     }
 });
+
+// Second usage case
+// -----------------
 
 MyAnotherClass = inherits(MyParentClass, {
     constructor: function() {
