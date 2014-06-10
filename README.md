@@ -29,12 +29,12 @@ MyParentClass = function() {
 MyParentClass.prototype = {
     method: function() {
         //
-    },
-
-    extend: function(protoProps, staticProps) {
-        return inherits(this, protoProps, staticProps);
     }
-}
+};
+
+MyParentClass.extend = function(protoProps, staticProps) {
+    return inherits(this, protoProps, staticProps);
+};
 
 MyChildClass = MyParentClass.extend({
     method: function() {
