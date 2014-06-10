@@ -11,6 +11,17 @@ Inherits.js is compatible in any module environment (AMD, CJS) or just as global
 
 You could install it via npm, or download directly from ```dist``` folder.
 
+## Interface
+
+#### inherits(parent, [prototypeProperties [, staticProperties]]);
+
+Where:
+
++ **parent** is a parent `Function` constructor;
++ **prototypeProperties** is an `Object` with child prototype;
++ **staticProperties** is an `Object` with static properties and methods for child constructor.
+
+
 ## Usage
 
 ```javascript
