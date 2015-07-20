@@ -29,9 +29,11 @@ module.exports = function(Parent, protoProps, staticProps) {
     Child.prototype = new Surrogate();
 
     // extend prototype
-    extend(Child.prototype, protoProps, {
-        constructor: Child
-    });
+    extend(Child.prototype, protoProps);
+
+    // set constructor directly
+    // @see https://developer.mozilla.org/en-US/docs/ECMAScript_DontEnum_attribute#JScript_DontEnum_Bug
+    Child.prototype.constructor = Child;
 
 
     return Child;

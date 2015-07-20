@@ -1,6 +1,6 @@
 {
     "name": "inherits-js",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Backbone inspired standalone inheritance function.",
     "main": "./src/inherits.js",
     "scripts": {

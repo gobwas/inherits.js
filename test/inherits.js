@@ -35,6 +35,7 @@ describe("Suite", function() {
 
             assert.strictEqual(Child.prototype.a, MyClass.prototype.a);
         });
+
     });
 
 });
